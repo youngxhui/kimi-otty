@@ -56,6 +56,10 @@ kimi-plugins/
 - [Kimi Code CLI](https://github.com/MoonshotAI/kimi-code)
 - [Otty](https://otty.sh/) (macOS)
 
+## Known Issues
+
+Otty currently only supports `state:claude` for agent lifecycle reporting, and does not yet support other agents (including Kimi). As a result, notifications and badges will display "Claude" as the agent name. This is a limitation on the Otty side, not an issue with this plugin.
+
 ## License
 
 MIT

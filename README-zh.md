@@ -57,6 +57,10 @@ kimi-plugins/
 - [Kimi Code CLI](https://github.com/MoonshotAI/kimi-code)
 - [Otty](https://otty.sh/)（macOS）
 
+## 已知问题
+
+Otty 目前仅支持 `state:claude` 进行智能体生命周期上报，尚不支持其他智能体（包括 Kimi）。因此通知和徽章中会显示 "Claude" 作为智能体名称。这是 Otty 侧的限制，并非本插件的问题。
+
 ## 许可
 
 MIT
