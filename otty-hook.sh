@@ -71,7 +71,7 @@ cli="${OTTY_CLI:-$(CDPATH= cd -- "$(dirname -- "$0")/../../../MacOS" 2>/dev/null
 # missing Otty app never breaks the user's Kimi session.
 if [ "$want_ctx" = "ctx" ]; then
     ctx=$(printf '%s' "$input" | base64)
-    "$cli" state:claude session-id="$sid" state="$state" cwd="$cwd" agent-pid="$kimi_pid" context-b64="$ctx" 2>/dev/null &
+    "$cli" state:kimi session-id="$sid" state="$state" cwd="$cwd" agent-pid="$kimi_pid" context-b64="$ctx" 2>/dev/null &
 else
-    "$cli" state:claude session-id="$sid" state="$state" cwd="$cwd" agent-pid="$kimi_pid" 2>/dev/null &
+    "$cli" state:kimi session-id="$sid" state="$state" cwd="$cwd" agent-pid="$kimi_pid" 2>/dev/null &
 fi
