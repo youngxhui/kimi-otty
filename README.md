@@ -4,7 +4,7 @@
 
 Otty terminal integration plugin — shows processing / idle / awaiting status badges in the Otty terminal pane for Kimi Code CLI sessions.
 
-![](./asstes/image.jpg)
+![](./assets/image.jpg)
 
 ## Features
 
