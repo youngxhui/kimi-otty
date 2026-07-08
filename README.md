@@ -4,6 +4,8 @@
 
 Otty terminal integration plugin — shows processing / idle / awaiting status badges in the Otty terminal pane for Kimi Code CLI sessions.
 
+![](./asstes/image.jpg)
+
 ## Features
 
 - **Real-time status badges**: Displays Kimi's current state (processing / idle / awaiting input) in the Otty terminal panel title bar.
@@ -13,15 +15,11 @@ Otty terminal integration plugin — shows processing / idle / awaiting status b
 
 ## Installation
 
-Clone this repository locally, then register the plugin in your Kimi Code CLI config:
+For instructions on installing third-party plugins, refer to the Kimi Code documentation: https://www.kimi.com/code/docs/en/kimi-code-cli/customization/plugins.html#installing-from-github
 
-```json
-{
-  "plugins": ["/path/to/kimi-plugins"]
-}
+```http
+https://github.com/youngxhui/kimi-otty
 ```
-
-Make sure [Otty](https://otty.app) is installed.
 
 ## How It Works
 
@@ -55,8 +53,8 @@ kimi-plugins/
 
 ## Requirements
 
-- [Kimi Code CLI](https://kimi.com)
-- [Otty](https://otty.app) (macOS)
+- [Kimi Code CLI](https://github.com/MoonshotAI/kimi-code)
+- [Otty](https://otty.sh/) (macOS)
 
 ## License
 
