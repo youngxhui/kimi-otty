@@ -1,0 +1,45 @@
+{
+  "name": "kimi-otty",
+  "version": "1.0.0",
+  "description": "Otty terminal integration — shows processing/idle/awaiting badges in the Otty terminal pane for Kimi Code CLI sessions.",
+  "author": {
+    "name": "yangxiaohui"
+  },
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "matcher": "startup|resume",
+      "command": "OTTY_CLI='/Applications/Otty.app/Contents/MacOS/otty-cli' ./otty-hook.sh idle \"$PPID\"",
+      "timeout": 5
+    },
+    {
+      "event": "PreToolUse",
+      "command": "OTTY_CLI='/Applications/Otty.app/Contents/MacOS/otty-cli' ./otty-hook.sh processing \"$PPID\"",
+      "timeout": 5
+    },
+    {
+      "event": "PostToolUse",
+      "command": "OTTY_CLI='/Applications/Otty.app/Contents/MacOS/otty-cli' ./otty-hook.sh processing \"$PPID\"",
+      "timeout": 5
+    },
+    {
+      "event": "PermissionRequest",
+      "command": "OTTY_CLI='/Applications/Otty.app/Contents/MacOS/otty-cli' ./otty-hook.sh awaiting \"$PPID\" ctx",
+      "timeout": 5
+    },
+    {
+      "event": "Stop",
+      "command": "OTTY_CLI='/Applications/Otty.app/Contents/MacOS/otty-cli' ./otty-hook.sh idle \"$PPID\"",
+      "timeout": 5
+    },
+    {
+      "event": "UserPromptSubmit",
+      "command": "OTTY_CLI='/Applications/Otty.app/Contents/MacOS/otty-cli' ./otty-hook.sh processing \"$PPID\"",
+      "timeout": 5
+    }
+  ],
+  "interface": {
+    "displayName": "Otty Integration",
+    "shortDescription": "Show agent state badges in Otty terminal panes"
+  }
+}
