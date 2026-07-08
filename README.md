@@ -18,7 +18,7 @@ Otty terminal integration plugin — shows processing / idle / awaiting status b
 For instructions on installing third-party plugins, refer to the Kimi Code documentation: https://www.kimi.com/code/docs/en/kimi-code-cli/customization/plugins.html#installing-from-github
 
 ```http
-https://github.com/youngxhui/kimi-otty
+https://github.com/youngxhui/kimi-otty/releases/tag/v0.1
 ```
 
 ## How It Works
