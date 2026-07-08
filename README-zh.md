@@ -4,7 +4,7 @@
 
 Otty 终端集成插件 — 在 Otty 终端面板中为 Kimi Code CLI 会话展示处理中 / 空闲 / 等待输入的实时状态徽章。
 
-![](./asstes/image.jpg)
+![](./assets/image.jpg)
 
 ## 功能
 
